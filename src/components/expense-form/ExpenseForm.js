@@ -46,7 +46,7 @@ const ExpenseForm = ({ onSaveExpenseData, hideAddExpense }) => {
     event.preventDefault();
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
     onSaveExpenseData(expenseData);
